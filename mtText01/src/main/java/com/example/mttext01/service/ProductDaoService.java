@@ -35,5 +35,31 @@ public class ProductDaoService implements ProductDao {
 		return results;
 	}
 
+	@Override
+	public List findProduct(String value) throws Exception {
+		List<Product> results = new ArrayList<>();
+		try {
+			results = this.dao.findProduct(value);
+		} catch (Exception e) {
+			throw e;
+		} finally {
+			this.dbconn.close();
+		}
+		return results;
+	}
+
+	@Override
+	public List findCategory(int value) throws Exception {
+		List<Product> results = new ArrayList<>();
+		try {
+			results = this.dao.findCategory(value);
+		} catch (Exception e) {
+			throw e;
+		} finally {
+			this.dbconn.close();
+		}
+		return results;
+	}
+
 
 }

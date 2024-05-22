@@ -9,18 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b769bdc-26b9-4c1c-bd92-d84f5ee209b3" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/test/findGoodServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/pojo/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/pojo/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/service/ProductDaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/service/ProductDaoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/test/AddProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/test/findSideServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/webapp/index.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="6b769bdc-26b9-4c1c-bd92-d84f5ee209b3" name="更改" comment="商品获取功能已完成2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,11 +114,27 @@
       <updated>1716172983930</updated>
       <workItem from="1716172985350" duration="895000" />
       <workItem from="1716271491662" duration="13584000" />
-      <workItem from="1716338928356" duration="4170000" />
+      <workItem from="1716338928356" duration="4502000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="商品获取功能已完成" />
+    <MESSAGE value="商品获取功能已完成2" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品获取功能已完成2" />
   </component>
 </project>

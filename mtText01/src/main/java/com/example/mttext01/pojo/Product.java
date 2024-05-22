@@ -1,58 +1,221 @@
 package com.example.mttext01.pojo;
 
 import java.io.Serializable;
+import java.util.List;
 
-public class Product implements Serializable{
+public class Product implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private int sid;		//分数id
-	private int student_id;	//学生id
-	private int course_id;			//课程id
-	private int num;			//分数
+	private String tags;
+	private String images;
+	private String unit;
+	private int inventory;
+	private String updateTime;
+	private int status;
+	private int sale;
+	private String _id;
+	private int id;
+	private String title;
+	private double price;
+	private Double price_off;
+	private String desc;
+	private int category;
+	private String c_item;
+	private String appkey;
+	private int __v;
+private int nowinventory;
+	// getters and setters
 
-	public Product() {				//无参的构造方法
-		super();
+
+	public int getNowinventory() {
+		return nowinventory;
 	}
 
-	public int getSid() {
-		return sid;
+	public void setNowinventory(int nowinventory) {
+		this.nowinventory = nowinventory;
 	}
 
-	public void setSid(int sid) {
-		this.sid = sid;
+	public String getTags() {
+		return tags;
 	}
 
-	public int getStudent_id() {
-		return student_id;
+	public void setTags(String tags) {
+		this.tags = tags;
 	}
 
-	public void setStudent_id(int student_id) {
-		this.student_id = student_id;
+	public String getImages() {
+		return images;
 	}
 
-	public int getCourse_id() {
-		return course_id;
+	public void setImages(String images) {
+		this.images = images;
 	}
 
-	public void setCourse_id(int course_id) {
-		this.course_id = course_id;
+	public String getUnit() {
+		return unit;
 	}
 
-	public int getNum() {
-		return num;
+	public void setUnit(String unit) {
+		this.unit = unit;
 	}
 
-	public void setNum(int num) {
-		this.num = num;
+	public int getInventory() {
+		return inventory;
+	}
+
+	public void setInventory(int inventory) {
+		this.inventory = inventory;
+	}
+
+	public String getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(String updateTime) {
+		this.updateTime = updateTime;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public int getSale() {
+		return sale;
+	}
+
+	public void setSale(int sale) {
+		this.sale = sale;
+	}
+
+	public String get_id() {
+		return _id;
+	}
+
+	public void set_id(String _id) {
+		this._id = _id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public Double getPrice_off() {
+		return price_off;
+	}
+
+	public void setPrice_off(Double price_off) {
+		this.price_off = price_off;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public int getCategory() {
+		return category;
+	}
+
+	public void setCategory(int category) {
+		this.category = category;
+	}
+
+	public String getC_item() {
+		return c_item;
+	}
+
+	public void setC_item(String c_item) {
+		this.c_item = c_item;
+	}
+
+	public String getAppkey() {
+		return appkey;
+	}
+
+	public void setAppkey(String appkey) {
+		this.appkey = appkey;
+	}
+
+	public int get__v() {
+		return __v;
+	}
+
+	public void set__v(int __v) {
+		this.__v = __v;
 	}
 
 	@Override
 	public String toString() {
 		return "Product{" +
-				"sid=" + sid +
-				", student_id=" + student_id +
-				", course_id=" + course_id +
-				", num=" + num +
+				"tags='" + tags + '\'' +
+				", images='" + images + '\'' +
+				", unit='" + unit + '\'' +
+				", inventory=" + inventory +
+				", updateTime='" + updateTime + '\'' +
+				", status=" + status +
+				", sale=" + sale +
+				", _id='" + _id + '\'' +
+				", id=" + id +
+				", title='" + title + '\'' +
+				", price=" + price +
+				", price_off=" + price_off +
+				", desc='" + desc + '\'' +
+				", category=" + category +
+				", c_item='" + c_item + '\'' +
+				", appkey='" + appkey + '\'' +
+				", __v=" + __v +
+				", nowinventory=" + nowinventory +
 				'}';
+	}
+
+	public Product(String tags, String images, String unit, int inventory, String updateTime, int status, int sale, String _id, int id, String title, double price, Double price_off, String desc, int category, String c_item, String appkey, int __v, int nowinventory) {
+		this.tags = tags;
+		this.images = images;
+		this.unit = unit;
+		this.inventory = inventory;
+		this.updateTime = updateTime;
+		this.status = status;
+		this.sale = sale;
+		this._id = _id;
+		this.id = id;
+		this.title = title;
+		this.price = price;
+		this.price_off = price_off;
+		this.desc = desc;
+		this.category = category;
+		this.c_item = c_item;
+		this.appkey = appkey;
+		this.__v = __v;
+		this.nowinventory = nowinventory;
+	}
+
+	public Product() {
 	}
 }

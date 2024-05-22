@@ -11,12 +11,11 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "AddProductServlet", value = "/AddProductServlet")
-public class AddProductServlet extends HttpServlet {
+@WebServlet(name = "getGoodsList", value = "/getGoodsList")
+public class findGoodServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 doPost(request,response);
@@ -24,13 +23,29 @@ doPost(request,response);
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        List<String> results = new ArrayList<String>();
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+        response.setHeader("Access-Control-Max-Age", "3600");
+        response.setHeader("Access-Control-Allow-Headers", "x-requested-with, Content-Type");
+
+        List<Product> results = new ArrayList<>();
     String value = request.getParameter("type");
+        boolean containsDigit = value.matches(".*\\d.*");
+    if (containsDigit){
         try {
-            results = DAOFactory.getIEmpDAOInstance().findSideBar(value);
+            int valueInt = Integer.parseInt(value);
+            results = DAOFactory.getIEmpDAOInstance().findCategory(valueInt);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }else {
+        try {
+            results = DAOFactory.getIEmpDAOInstance().findProduct(value);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
         Gson gson = new Gson();
         String json = gson.toJson(results);
 

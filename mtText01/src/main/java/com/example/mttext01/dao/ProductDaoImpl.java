@@ -19,15 +19,12 @@ public class ProductDaoImpl implements ProductDao {
 
         this.conn = conn;
     }
-//    @Override
-//    public List find(String sql, Object... obj) throws Exception {
-//        return null;
-//    }
+
 
 
     @Override
     public List findSideBar(String value)throws Exception {
-        boolean flag = false; // 定义标识
+
         String sql = "select name from sidebar where value=?";
 
 
@@ -41,58 +38,83 @@ List<String> results = new ArrayList<String>();
 
 
         }
-        System.out.println(results);
+
         this.pstmt.close(); // 关闭PreparedStatement操作
         return results;
     }
 
-//    @Override
-//    public List<Product> findAll(String product_name) throws Exception {
-//
-//        List<Product> list = new ArrayList<Product>();// 定义集合，接受返回的数据
-//
-//        String sql = "select sid,student_id,course_id,num from score ";
-//
-//        if (product_name != null && !"".equals(product_name)) {
-//            sql = "select sid,student_id,course_id,num from product where product_name like? ";
-//           this.pstmt = this.conn.prepareStatement(sql);
-//
-//            this.pstmt.setString(1, "%" + product_name + "%");// 设置查询产品名称
-//        } else {
-//            this.pstmt = this.conn.prepareStatement(sql);// 实例化PreparedStatement
-//        }
-//        ResultSet rs = this.pstmt.executeQuery();// 执行查询操作
-//        Product product = null;
-//        while (rs.next()) {
-//            product = new Product();// 实例化新的product对象
-//            product.setProduct_id(rs.getString(1));
-//            product.setProduct_name(rs.getString(2));
-//            product.setPrice(rs.getDouble(3));
-//            product.setInfo(rs.getString(4));
-//            list.add(product); // 向集合中增加product对象
-//        }
-//
-//        this.pstmt.close();
-//        System.out.println("111---"+list);
-//        return list; // 返回全部结果
-//    }
-//
-//    @Override
-//    public Product findByProductId(String product_id) throws Exception {
-//        Product product = null;
-//        String sql = "select product_id,product_name,price,info from product where product_id=?";
-//        this.pstmt = this.conn.prepareStatement(sql);
-//        this.pstmt.setString(1, product_id); // 设置产品编号
-//        ResultSet rs = this.pstmt.executeQuery();
-//        if (rs.next()) {
-//            product = new Product();
-//            product.setProduct_id(rs.getString(1));
-//            product.setProduct_name(rs.getString(2));
-//            product.setPrice(rs.getDouble(3));
-//            product.setInfo(rs.getString(4));
-//        }
-//        this.pstmt.close();
-//        return product; // 如果查询不到结果则返回null,默认值为null
-//    }
+   @Override
+public List findProduct(String value) throws Exception {
+    String sql = "SELECT id, title, price, price_off, `desc`, category, c_item, tags, images, unit, inventory, updateTime, status, sale, _id, appkey, __v,nowinventory FROM products WHERE c_item = ?";
 
+    this.pstmt = this.conn.prepareStatement(sql);
+
+    List<Product> results = new ArrayList<>();
+    this.pstmt.setString(1, value);
+    ResultSet rs = this.pstmt.executeQuery();
+    while (rs.next()) {
+        Product product = new Product();
+        product.setId(rs.getInt("id"));
+        product.setTitle(rs.getString("title"));
+        product.setPrice(rs.getDouble("price"));
+        product.setPrice_off(rs.getDouble("price_off"));
+        product.setDesc(rs.getString("desc"));
+        product.setCategory(rs.getInt("category"));
+        product.setC_item(rs.getString("c_item"));
+        product.setTags(rs.getString("tags"));
+        product.setImages(rs.getString("images"));
+        product.setUnit(rs.getString("unit"));
+        product.setInventory(rs.getInt("inventory"));
+        product.setUpdateTime(rs.getString("updateTime"));
+        product.setStatus(rs.getInt("status"));
+        product.setSale(rs.getInt("sale"));
+        product.set_id(rs.getString("_id"));
+        product.setAppkey(rs.getString("appkey"));
+        product.set__v(rs.getInt("__v"));
+        product.setNowinventory(rs.getInt("nowinventory"));
+        results.add(product);
+    }
+
+    this.pstmt.close();
+    return results;
 }
+
+    @Override
+    public List findCategory(int value) throws Exception {
+
+            String sql = "SELECT id, title, price, price_off, `desc`, category, c_item, tags, images, unit, inventory, updateTime, status, sale, _id, appkey, __v,nowinventory FROM products WHERE category = ?";
+
+            this.pstmt = this.conn.prepareStatement(sql);
+
+            List<Product> results = new ArrayList<>();
+            this.pstmt.setInt(1, value);
+            ResultSet rs = this.pstmt.executeQuery();
+            while (rs.next()) {
+                Product product = new Product();
+                product.setId(rs.getInt("id"));
+                product.setTitle(rs.getString("title"));
+                product.setPrice(rs.getDouble("price"));
+                product.setPrice_off(rs.getDouble("price_off"));
+                product.setDesc(rs.getString("desc"));
+                product.setCategory(rs.getInt("category"));
+                product.setC_item(rs.getString("c_item"));
+                product.setTags(rs.getString("tags"));
+                product.setImages(rs.getString("images"));
+                product.setUnit(rs.getString("unit"));
+                product.setInventory(rs.getInt("inventory"));
+                product.setUpdateTime(rs.getString("updateTime"));
+                product.setStatus(rs.getInt("status"));
+                product.setSale(rs.getInt("sale"));
+                product.set_id(rs.getString("_id"));
+                product.setAppkey(rs.getString("appkey"));
+                product.set__v(rs.getInt("__v"));
+                product.setNowinventory(rs.getInt("nowinventory"));
+                results.add(product);
+            }
+
+            this.pstmt.close();
+            return results;
+        }
+    }
+
+
