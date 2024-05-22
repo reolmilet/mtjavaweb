@@ -10,32 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b769bdc-26b9-4c1c-bd92-d84f5ee209b3" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mtText01_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mtText01_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_servlet_jakarta_servlet_api_5_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/src/main/java/com/example/mttext01/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mtText01/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mttext01.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/test/findGoodServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/dao/ProductDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/pojo/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/pojo/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/service/ProductDaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/service/ProductDaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/test/AddProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/java/com/example/mttext01/test/findSideServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mtText01/mtText01/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/mtText01/mtText01/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,31 +45,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/wangz/Documents/WeChat Files/wxid_zbzw9ea22b0n22/FileStorage/File/2024-05/20221764田青清(2)/mttext01/mtText01/src/main/webapp/WEB-INF",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wangz/Documents/WeChat Files/wxid_zbzw9ea22b0n22/FileStorage/File/2024-05/20221764田青清(2)/mttext01/mtText01/src/main/webapp/WEB-INF&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wangz\Documents\WeChat Files\wxid_zbzw9ea22b0n22\FileStorage\File\2024-05\20221764田青清(2)\mttext01\mtText01\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\wangz\Documents\WeChat Files\wxid_zbzw9ea22b0n22\FileStorage\File\2024-05\20221764田青清(2)\mttext01\mtText01\src\main\java\com\example\mttext01" />
       <recent name="C:\Users\wangz\Documents\WeChat Files\wxid_zbzw9ea22b0n22\FileStorage\File\2024-05\20221764田青清(2)\mttext01\mtText01\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.mttext01.test" />
     </key>
   </component>
   <component name="RunManager">
@@ -137,7 +124,8 @@
       <option name="presentableId" value="Default" />
       <updated>1716172983930</updated>
       <workItem from="1716172985350" duration="895000" />
-      <workItem from="1716271491662" duration="4604000" />
+      <workItem from="1716271491662" duration="13584000" />
+      <workItem from="1716338928356" duration="4170000" />
     </task>
     <servers />
   </component>
